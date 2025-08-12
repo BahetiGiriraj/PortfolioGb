@@ -7,30 +7,45 @@ import {
   DialogTitle
 } from "@/components/ui/dialog";
 
+// Import all your images and videos here
+// This method ensures your paths are correct after deployment
+import ACD from "/assets/workshops/ACD.png";
+import Unity from "/assets/workshops/Unity.jpeg";
+import AwsCloudClub from "/assets/workshops/AwsCloudClub.png";
+import MirageClubC from "/assets/workshops/MirageClubC.png";
+import AwsEvent from "/assets/workshops/AwsEvent.png";
+import IdeateCC from "/assets/workshops/IdeateCC.png";
+
+import RanidiiP1 from "/assets/work/RanidiiP1.png";
+import RanidiiP2 from "/assets/work/RanidiiP2.png";
+import Giriraj from "/assets/work/Giriraj.png";
+
 interface MediaItem {
   id: number;
   title: string;
   description: string;
   type?: "image" | "video";
-  src?: string;
+  src: string; // The src is now a required string after importing
 }
 
 const mediaData = {
   workshops: [
-    { id: 1, title: "ACD", description: "AWS Community Day Pune , AI/ML Edition 2025", type: "image", src: "/assets/workshops/ACD.png" },
-    { id: 2, title: "Unity Workshop", description: "Taught the basics of Unity during the event.", type: "image", src: "/assets/workshops/Unity.JPEG" },
-    { id: 3, title: "Aws Cloud Club", description: "Club Meeting for future plans", type: "image", src: "/assets/workshops/AwsCloudClub.png" },
-    { id: 4, title: "Mirage", description: "Club Catalyst 2025", type: "image", src: "/assets/workshops/MirageClubC.png" },
-    { id: 5, title: "Aws", description: "Successfully managed the AWS event.", type: "image", src: "/assets/workshops/AwsEvent.png" },
-    { id: 6, title: "Ideate", description: "Club Catalyst 2025", type: "image", src: "/assets/workshops/IdeateCC.png" }
+    { id: 1, title: "ACD", description: "AWS Community Day Pune , AI/ML Edition 2025", type: "image", src: ACD },
+    { id: 2, title: "Unity Workshop", description: "Taught the basics of Unity during the event.", type: "image", src: Unity },
+    { id: 3, title: "Aws Cloud Club", description: "Club Meeting for future plans", type: "image", src: AwsCloudClub },
+    { id: 4, title: "Mirage", description: "Club Catalyst 2025", type: "image", src: MirageClubC },
+    { id: 5, title: "Aws", description: "Successfully managed the AWS event.", type: "image", src: AwsEvent },
+    { id: 6, title: "Ideate", description: "Club Catalyst 2025", type: "image", src: IdeateCC }
   ],
   work: [
-    { id: 1, title: "Design Poster for Shruti Lathi", description: "Promotional poster for her upcoming art exhibition.m", type: "image", src: "/assets/work/RanidiiP1.PNG" },
-    { id: 2, title: "Artwork Exhibition Poster", description: "Promotional design for Shruti Lathi’s event.", type: "image", src: "/assets/work/RanidiiP2.PNG" }
+    { id: 1, title: "Design Poster for Shruti Lathi", description: "Promotional poster for her upcoming art exhibition.m", type: "image", src: RanidiiP1 },
+    { id: 2, title: "Artwork Exhibition Poster", description: "Promotional design for Shruti Lathi’s event.", type: "image", src: RanidiiP2 },
+    { id: 3, title: "Promotional Poster for My Work", description: "A promotional poster designed to showcase my professional skills and services.", type: "image", src: Giriraj },
   ],
   videos: [
-    // { id: 1, title: "Launch Event Highlights", description: "Highlights from the launch event held in July.", type: "video", src: "/assets/videos/launch-event.mp4" },
-    // { id: 2, title: "Behind the Scenes", description: "A peek behind the scenes of our creative process.", type: "video", src: "/assets/videos/behind-the-scenes.mp4" }
+    // Add your video items here.
+    // Make sure to import them first, just like the images.
+    // { id: 1, title: "Launch Event Highlights", description: "Highlights from the launch event held in July.", type: "video", src: video1 },
   ]
 };
 

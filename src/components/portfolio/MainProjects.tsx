@@ -1,6 +1,13 @@
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
+// --- Import all your project images here ---
+// This ensures Vite correctly processes and deploys them.
+import wanderlustImg from "/assets/project/Wanderlust.png";
+import zerodhaCloneImg from "/assets/project/ZerodhaClone.png";
+import expenseCompanionImg from "/assets/project/Expen.png";
+import shrutiArtImg from "/assets/project/C1.png";
+
 const initialNotionPages = [
   // {
   //   id: 1,
@@ -23,7 +30,6 @@ const initialNotionPages = [
   //   display_order: 3,
   //   status: "published",
   // },
-  
 ];
 
 const MainProjects = () => {
@@ -36,29 +42,32 @@ const MainProjects = () => {
       id: 1,
       name: "WanderLust",
       about: "WanderLust is an Airbnb clone with features to manage listings and comments, set your location, secure authentication, and search stays by country.",
-      skills: ["React", "Node", "Express" , "Bootstrap" , "MongoDB" , "RESTful API" , "MapBox API" , "GitHub" , "Git"],
+      skills: ["React", "Node", "Express", "Bootstrap", "MongoDB", "RESTful API", "MapBox API", "GitHub", "Git"],
       link: "https://project-1-v8jl.onrender.com/listing",
-      image: "/assets/project/Wanderlust.png",
+      // Use the imported image variable here
+      image: wanderlustImg, 
       category: "personal",
     },
     {
       id: 2,
       name: "Zerodha Clone",
-      about: "Frontend-only replica focusing on the user interface .",
+      about: "Frontend-only replica focusing on the user interface.",
       skills: ["React", "Bootstrap"],
       link: "https://zerodhaclone-1-2q0t.onrender.com",
-      image: "/assets/project/ZerodhaClone.png",
+      // Use the imported image variable here
+      image: zerodhaCloneImg, 
       category: "personal",
     },
     {
       id: 3,
       name: "Expense Companion",
-      about: "Track your weekly and monthly expenses, record your income and balance, calculate the total balance, and export everything to spreadsheets. Made with Lovable ",
-      skills: ["TypeScript" , "Tailwind" , "Lovable AI"],
+      about: "Track your weekly and monthly expenses, record your income and balance, calculate the total balance, and export everything to spreadsheets. Made with Lovable",
+      skills: ["TypeScript", "Tailwind", "Lovable AI"],
       link: "https://preview--happy-wallet-whisperer.lovable.app",
-      image: "/assets/project/Expen.png",
+      // Use the imported image variable here
+      image: expenseCompanionImg,
       category: "personal",
-    }
+    },
   ];
 
   const clientProjects = [
@@ -68,7 +77,8 @@ const MainProjects = () => {
       about: "Portfolio for showcasing her work",
       skills: ["Next.js", "GraphQL", "TailwindCSS"],
       link: "https://shrutilathi.vercel.app",
-      image: "/assets/project/C1.png",
+      // Use the imported image variable here
+      image: shrutiArtImg,
       category: "client",
     },
     // {
@@ -100,6 +110,7 @@ const MainProjects = () => {
               >
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border border-border group-hover:border-primary transition-colors overflow-hidden">
+                    {/* These images are from Unsplash, so their paths are fine */}
                     <img
                       src="https://images.unsplash.com/photo-1541560052-5e137f229371?w=900&auto=format&fit=crop&q=60"
                       className="object-cover w-full h-full"
@@ -128,6 +139,7 @@ const MainProjects = () => {
               >
                 <div className="space-y-4">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border border-border group-hover:border-primary transition-colors overflow-hidden">
+                    {/* This image is also from Unsplash */}
                     <img
                       src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop"
                       className="object-cover w-full h-full"
