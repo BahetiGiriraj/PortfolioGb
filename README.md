@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# My Personal Portfolio
 
-## Project info
+This repository contains the code for my personal portfolio website, showcasing my skills, projects, and contact information. The main focus is on creating a clean, modern, and responsive user interface.
 
-**URL**: https://lovable.dev/projects/f8b9cbd1-32b1-4140-83a6-98a025ad4c22
+## Technologies Used
 
-## How can I edit this code?
+This project is built with the following modern web development technologies:
 
-There are several ways of editing your application.
+  * **React:** A JavaScript library for building user interfaces.
+  * **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+  * **Vite:** A fast build tool that provides a lightning-fast development experience.
+  * **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+  * **shadcn-ui:** A collection of accessible and reusable components built with Radix UI and Tailwind CSS.
+  * **Lucide-React:** A clean and consistent icon library.
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f8b9cbd1-32b1-4140-83a6-98a025ad4c22) and start prompting.
+To get a copy of this project up and running on your local machine, follow these simple steps.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+Make sure you have the following installed:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+  * **Node.js:** (version 18 or later is recommended)
+  * **npm:** (comes with Node.js)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/BahetiGiriraj/your-repository-name.git
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd your-repository-name
+    ```
+3.  **Install the dependencies:**
+    ```sh
+    npm install
+    ```
+
+### Running the Project
+
+To start the development server and view the project in your browser, run:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will run the application on `http://localhost:5173` (or another port if 5173 is in use). The page will automatically reload as you make changes.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## File Structure
 
-**Use GitHub Codespaces**
+The core code for the header component is located at `src/components/Header.tsx`.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+/
+├── public/
+│   └── assets/
+│       └── profile/
+│           └── profile.png  # Your profile image
+├── src/
+│   ├── components/
+│   │   ├── ui/               # shadcn-ui components
+│   │   └── Header.tsx        # The main header component
+│   ├── App.tsx               # Main application component
+│   ├── main.tsx              # Entry point of the application
+│   └── index.css             # Global Tailwind CSS styles
+├── tailwind.config.js        # Tailwind CSS configuration
+└── package.json              # Project dependencies and scripts
+```
 
-## What technologies are used for this project?
+## Customization
 
-This project is built with:
+You can easily customize this component to fit your needs:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+  * **Change the name and title:** Edit the text directly in `src/components/Header.tsx`.
+  * **Update social links:** Modify the `onClick` events on the social buttons with your own LinkedIn and GitHub URLs.
+  * **Replace the profile picture:** Place your own image in `public/assets/profile/profile.png` (or update the path in the `img` tag).
+  * **Adjust styling:** Use the Tailwind CSS classes within the component to change colors, sizes, and layout.
 
-## How can I deploy this project?
+-----
 
-Simply open [Lovable](https://lovable.dev/projects/f8b9cbd1-32b1-4140-83a6-98a025ad4c22) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Feel free to customize this `README` further with any additional sections, such as a **Contact** section or details about deploying the project.
